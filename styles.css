@@ -1,0 +1,48 @@
+.container {
+  margin-top: 50px;
+}
+
+.btn {
+  width: 96.5%;
+}
+
+.btn-list {
+  margin-bottom: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+.task-done {
+  color: rgb(0, 168, 0);
+  text-decoration: line-through;
+}
+
+.welcome-info {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  display: none;
+}
+
+.welcome-info__title, .welcome-info__description {
+  margin-top: 10px;
+}
+
+.list-group {
+  margin-top: 6px;
+}
+
+.list-group:empty {
+  display: none;
+}
+
+.list-group:empty + .welcome-info {
+  display: flex;
+}

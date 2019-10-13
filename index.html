@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>TODO App</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+      <div class="navbar-brand">TODO App</div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 btn-list">
+          <button id="add-task" class="btn btn-primary">
+            Add
+            <i class="fas fa-plus-circle ml-1"></i>
+          </button>
+          <button id="remove-task" class="btn btn-primary">
+            Remove
+            <i class="fas fa-minus-circle ml-1"></i>
+          </button>
+          <button id="clear-tasks" class="btn btn-primary">
+            Clear
+            <i class="far fa-trash-alt ml-1"></i>
+          </button>
+        </div>
+        <div class="col-md-8">
+          <ul class="list-group"></ul>
+          <div class="welcome-info">
+            <i class="fas fa-clipboard-list fa-3x"></i>
+            <h2 class="welcome-info__title">
+              Add your to do stuff
+            </h2>
+            <p class="welcome-info__description">
+              Just click and add task one by one
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
