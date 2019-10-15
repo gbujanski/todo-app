@@ -19,12 +19,12 @@ const clearLocalStore = () => {
 $('#add-task').click(() => {
   const tasknumber = tasks.length + 1;
   const taskDescription = `Task number ${tasknumber}`;
-  const id =tasknumber
+  const id = tasknumber
   tasks.push({ id: id, description: taskDescription, isDone: false });
 
   $('ul')
     .append(
-      `<li class="list-group-item" key=${id}>
+      `<li class='list-group-item' key=${id}>
         ${taskDescription}
       </li>`
     )
@@ -53,7 +53,7 @@ $('#clear-tasks').click(() => {
   clearLocalStore();
 });
 
-$(document).on('click', 'li', function() {
+$('li').click(function() {
   $(this).toggleClass('task-done');
   const index = $(this).attr('key') - 1;
   tasks[index].isDone = !tasks[index].isDone;
